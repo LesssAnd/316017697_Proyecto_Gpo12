@@ -7,7 +7,9 @@
 
 // GLFW
 #include <GLFW/glfw3.h>
-
+// Other Libs
+#include "SOIL2/SOIL2.h"
+#include "stb_image.h"
 // GL includes
 #include "Shader.h"
 #include "Camera.h"
@@ -18,9 +20,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-// Other Libs
-#include "SOIL2/SOIL2.h"
-#include "stb_image.h"
+
 // Properties
 const GLuint WIDTH = 800, HEIGHT = 600;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
@@ -32,7 +32,7 @@ void DoMovement();
 
 
 // Camera
-Camera camera(glm::vec3(0.0f, 0.0f, 0.0f));
+Camera camera(glm::vec3(.0f, .0f, .0f));
 bool keys[1024];
 GLfloat lastX = 400, lastY = 300;
 bool firstMouse = true;
@@ -106,9 +106,13 @@ int main()
     // Load models
     Model comedor((char*)"Models/dinning_room/comedor.obj");
     Model silla1((char*)"Models/dinning_room/silla1.obj");
-    Model silla2((char*)"Models /dinning_room / silla2.obj");
+    Model silla2((char*)"Models/dinning_room/silla2.obj");
     Model silla3((char*)"Models/dinning_room/silla3.obj");
-
+    Model mueble((char*)"Models/lamp1/mueble.obj");
+    Model Octopus((char*)"Models/lamp1/octopuslamp.obj");
+    Model baul((char*)"Models/Baul/Baul_PPG.obj");
+    Model cama((char*)"Models/bed/bed_PPG.obj");
+    Model room((char*)"Models/Room/Room.obj");
 
     glm::mat4 projection = glm::perspective(camera.GetZoom(), (float)SCREEN_WIDTH / (float)SCREEN_HEIGHT, 0.1f, 100.0f);
 
@@ -211,7 +215,7 @@ int main()
         DoMovement();
 
         // Clear the colorbuffer
-        glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+        glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         lightingShader.Use();
@@ -245,16 +249,16 @@ int main()
         //Primera pokebola*
         // Draw the loaded model
         glm::mat4 model(1);
-       // model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
+        model = glm::scale(model, glm::vec3(2.0f, 2.0f, 2.0f));
         glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-        glBindVertexArray(VAO);
+     
         //glDrawArrays(GL_TRIANGLES, 0, 36);
         comedor.Draw(lightingShader);
         model = glm::mat4(1);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "material.ambient"), 1.f, 1.f, 1.f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), .807f, .513f, .792f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), .91f, .91f, 0.91f);
-        glUniform3f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 50.0f, 50.0f, 50.0f);
+        glUniform3f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 50.0f, 50.0f, 50.0f); 
         silla1.Draw(lightingShader);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "material.ambient"), 1.f, 1.f, 1.f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), .807f, .513f, .792f);
@@ -266,10 +270,45 @@ int main()
         glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), .91f, .91f, 0.91f);
         glUniform3f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 50.0f, 50.0f, 50.0f);
         silla3.Draw(lightingShader);
-        
+        //Octopues
+        model = glm::mat4(1);
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 0.0, 0.0, 1.0, 0.75);
+        Octopus.Draw(lightingShader);
+        //Mueble
+        model = glm::mat4(1);
+        //model = glm::translate(model, glm::vec3(10.f, 0.f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 0.0, 0.0, 1.0, 0.75);
+        mueble.Draw(lightingShader);
+
+        //Tercer esfera
+        model = glm::mat4(1);
+        //model = glm::translate(model, glm::vec3(0.f, 0.f, 10.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 0.0, 0.0, 1.0, 0.75);*/
+        baul.Draw(lightingShader);
+        //Bed
+        model = glm::mat4(1);
+        //	model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 0.0, 0.0, 1.0, 0.75);*/
+        cama.Draw(lightingShader);
+        //
+        model = glm::mat4(1);
+        //	model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 0.0, 0.0, 1.0, 0.75);
+        room.Draw(lightingShader);
+
 
         
-
+        glBindVertexArray(VAO);
         glBindVertexArray(0);
 
 
