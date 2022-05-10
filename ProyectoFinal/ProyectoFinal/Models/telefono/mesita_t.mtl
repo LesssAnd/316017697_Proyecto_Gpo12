@@ -53,6 +53,13 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd mesa.png
 Ni 1.00
+newmtl pasted__lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd texturarosita.png
+Ni 1.00
 newmtl pasted__lambert6SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -60,3 +67,13 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd ojos.png
 Ni 1.00
+newmtl phong1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 0.99 0.99 0.99
+map_Kd nariz.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks spec_nariz.png
+Ns 18.00
