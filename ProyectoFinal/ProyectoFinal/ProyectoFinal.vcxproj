@@ -20,9 +20,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Shaders\lighting.frag" />
+    <None Include="Shaders\lighting.vs" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProyectoFinal.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>

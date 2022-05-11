@@ -95,6 +95,27 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd alfombra.png
 Ni 1.00
+newmtl lambert17SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd caminito.png
+Ni 1.00
+newmtl lambert18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ventana.png
+Ni 1.00
+newmtl lambert20SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd verde.png
+Ni 1.00
 newmtl pasted__lambert3SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -164,6 +185,13 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd perilla.png
+Ni 1.00
+newmtl pasted__lambert8SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd c_oscuro.png
 Ni 1.00
 newmtl pasted__lambert8SG1
 illum 4
@@ -307,12 +335,23 @@ map_Kd venta1_esp.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl phong1SG
+newmtl phong3SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd venta1_esp.png
+map_Kd ventanas.png
 Ni 1.00
-Ks 0.50 0.50 0.50
+Ks 0.00 0.00 0.00
+map_Ks Ventana_ovalo.png
+Ns 18.00
+newmtl phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd ventanas.png
+Ni 1.00
+Ks 0.00 0.00 0.00
+map_Ks Ventana_spec.png
 Ns 18.00

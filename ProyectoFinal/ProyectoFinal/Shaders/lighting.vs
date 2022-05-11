@@ -9,7 +9,7 @@ out vec2 TexCoords;
 out float trans;
 
 uniform mat4 model;
-uniform mat4 view;
+uniform mat4 view; 
 uniform mat4 projection;
 uniform float transparencia;
 

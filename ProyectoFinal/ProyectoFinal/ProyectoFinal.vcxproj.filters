@@ -18,10 +18,18 @@
     <None Include="Shaders\lighting.frag">
       <Filter>Archivos de origen</Filter>
     </None>
+    <None Include="Shaders\lighting.vs">
+      <Filter>Archivos de origen</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ProyectoFinal.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Camera.h">
+      <Filter>Archivos de origen</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
