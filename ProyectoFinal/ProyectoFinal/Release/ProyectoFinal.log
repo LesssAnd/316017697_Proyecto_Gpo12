@@ -1,0 +1,63 @@
+﻿  MainPrueba.cpp
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(82,32): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(82,47): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(242,30): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(276,27): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(277,27): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(278,27): warning C4244: '=': conversión de 'double' a 'T'; posible pérdida de datos
+          with
+          [
+              T=float
+          ]
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(512,98): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(524,101): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(624,29): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(625,29): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(626,29): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(633,29): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(634,29): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(635,29): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(675,23): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(676,23): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(677,23): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(682,23): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(683,23): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(684,23): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(690,25): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(692,25): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(693,25): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(696,25): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(697,25): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(698,25): warning C4305: '+=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(704,25): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(705,25): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(706,25): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(710,25): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(711,25): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(714,25): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(776,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(777,17): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(781,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(782,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(784,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\ProyectoFinal\MainPrueba.cpp(785,13): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+soil2-debug.lib(SOIL2.obj) : warning LNK4075: se omite '/EDITANDCONTINUE' debido a la especificación '/OPT:ICF'
+LINK : warning LNK4098: la biblioteca predeterminada'MSVCRTD' entra en conflicto con otras bibliotecas; use la biblioteca /NODEFAULTLIB:biblioteca
+  Generando código
+  15 of 628 functions ( 2.4%) were compiled, the rest were copied from previous compilation.
+    5 functions were new in current compilation
+    105 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+soil2-debug.lib(etc1_utils.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(etc1_utils.obj)' o en 'C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_DXT.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_DXT.obj)' o en 'C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(image_helper.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(image_helper.obj)' o en 'C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+soil2-debug.lib(SOIL2.obj) : warning LNK4099: no se encontró PDB 'soil2-debug.pdb' con 'soil2-debug.lib(SOIL2.obj)' o en 'C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\Release\soil2-debug.pdb'; se vinculará el objeto sin tener en cuenta información de depuración
+  ProyectoFinal.vcxproj -> C:\Users\star_\OneDrive - UNIVERSIDAD NACIONAL AUTÓNOMA DE MÉXICO\Lab Compu grafica\Repositorio\316017697_Proyecto_Gpo12\ProyectoFinal\Release\ProyectoFinal.exe
