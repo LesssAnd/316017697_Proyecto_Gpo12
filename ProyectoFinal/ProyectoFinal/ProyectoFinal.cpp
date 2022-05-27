@@ -32,7 +32,7 @@ void DoMovement();
 
 // ~Inicialización de la camara~
 // Variables de la posición de la cámara
-glm::vec3 poscam(5.f, 4.0f, 30.0f);
+glm::vec3 poscam(-7.f, 3.0f, 35.0f);
 Camera camera(glm::vec3(poscam.x, poscam.y, poscam.z));
 bool keys[1024];
 GLfloat lastX = 400, lastY = 300;
@@ -137,44 +137,47 @@ int main()
 
 
 
-    // Load models
-    ////Primer objeto
-    //Model comedor((char*)"Models/dinning_room/comedor.obj");
-    //Model silla1((char*)"Models/dinning_room/silla1.obj");
-    //Model silla2((char*)"Models/dinning_room/silla2.obj");
-    //Model silla3((char*)"Models/dinning_room/silla3.obj");
-    ////Segundo objeto
-    //Model mueble((char*)"Models/lamp1/mueble.obj");
-    //Model Octopus((char*)"Models/lamp1/octopuslamp.obj");
-    ////Tercer objeto
-    //Model baul((char*)"Models/Baul/Baul_PPG.obj");
-    //Model tapa((char*)"Models/Baul/tapa.obj");
-    ////Cuarto objeto
-    //Model cama((char*)"Models/bed/bed_PPG.obj");
-    ////Quinto objeto
-    //Model mesita((char*)"Models/telefono/mesita_t.obj");
-    //Model caja_tel((char*)"Models/telefono/caja_tel.obj");
-    //Model telefono((char*)"Models/telefono/telefono.obj");
-    //Model nariz_tel((char*)"Models/telefono/nariz_tel.obj");
-    ////Sexto objeto
-    //Model osito((char*)"Models/lamp2/bear.obj");
-    ////Sexto objeto
-    //Model tocador((char*)"Models/dressing_table/tocador.obj");
-    //Model toc1((char*)"Models/dressing_table/cajon1.obj");
-    //Model toc2((char*)"Models/dressing_table/cajon2.obj");
-    //Model toc3((char*)"Models/dressing_table/cajon3.obj");
-    ////Cochera
-    //Model cochera1((char*)"Models/house/cochera.obj");
-    //Model cochera2((char*)"Models/house/cochera.obj");
-    //Model cochera3((char*)"Models/house/cochera.obj");
+     //Load models
+    //Primer objeto
+    Model comedor((char*)"Models/dinning_room/comedor.obj");
+    Model silla1((char*)"Models/dinning_room/silla1.obj");
+    Model silla2((char*)"Models/dinning_room/silla2.obj");
+    Model silla3((char*)"Models/dinning_room/silla3.obj");
+    //Segundo objeto
+    Model mueble((char*)"Models/lamp1/mueble.obj");
+    Model Octopus((char*)"Models/lamp1/octopuslamp.obj");
+    //Tercer objeto
+    Model baul((char*)"Models/Baul/Baul_PPG.obj");
+    Model tapa((char*)"Models/Baul/tapa.obj");
+    //Cuarto objeto
+    Model cama((char*)"Models/bed/bed_PPG.obj");
+    //Quinto objeto
+    Model mesita((char*)"Models/telefono/mesita_t.obj");
+    Model caja_tel((char*)"Models/telefono/caja_tel.obj");
+    Model telefono((char*)"Models/telefono/telefono.obj");
+    Model nariz_tel((char*)"Models/telefono/nariz_tel.obj");
+    //Sexto objeto
+    Model osito((char*)"Models/lamp2/bear.obj");
+    //Sexto objeto
+    Model tocador((char*)"Models/dressing_table/tocador.obj");
+    Model toc1((char*)"Models/dressing_table/cajon1.obj");
+    Model toc2((char*)"Models/dressing_table/cajon2.obj");
+    Model toc3((char*)"Models/dressing_table/cajon3.obj");
+    //Cochera
+    Model cochera1((char*)"Models/house/cochera.obj");
+    Model cochera2((char*)"Models/house/cochera.obj");
+    Model cochera3((char*)"Models/house/cochera.obj");
     //Pizarron
     Model pizarron((char*)"Models/chalkboard/pizarron.obj");
     //Mueble
-    //Model lab_mueble((char*)"Models//.obj");
+    Model lab_mueble((char*)"Models/lab_shelf/mueble.obj");
     //Sillon
     Model sillon_lab((char*)"Models/Armchair/sillon.obj");
     ////Mesita
     Model lab_mesita((char*)"Models/lab_table/table.obj");
+
+    Model lab_soporte((char*)"Models/flask/flask.obj");
+    Model lab_cristal((char*)"Models/flask/cristal.obj");
     //Ventanas de la fachada
     Model vent1((char*)"Models/house/vent_1.obj");
     //Fachada
@@ -256,7 +259,7 @@ int main()
         DoMovement();
 
         // Clear the colorbuffer
-        glClearColor(0.5f, 0.5f, 0.5f, 1.0f);
+        glClearColor(0.972f, 0.972f, 0.890f, 1.0f);
         //glClearColor(0.890f, 0.988f, 0.988f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -343,174 +346,174 @@ int main()
 
        
 
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.f, 0.8f, 0.f));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //comedor.Draw(lightingShader);
-        ////silla 1
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.f, 0.8f , 0.f + sil1));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        ////glBindVertexArray(VAO);
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //silla1.Draw(lightingShader);
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.f, 0.8f, 0.f));
+        model = glm::scale(model, glm::vec3(0.8f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        comedor.Draw(lightingShader);
+        //silla 1
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.f, 0.8f , 0.f + sil1));
+        model = glm::scale(model, glm::vec3(0.8f));
+        //glBindVertexArray(VAO);
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        silla1.Draw(lightingShader);
 
 
-        ////Silla 2
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.f + sil2, 0.8f, 0.f));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //silla2.Draw(lightingShader);
+        //Silla 2
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.f + sil2, 0.8f, 0.f));
+        model = glm::scale(model, glm::vec3(0.8f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        silla2.Draw(lightingShader);
 
-        ////Sillla 3
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.f, 0.8f, 0.f + sil3));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //silla3.Draw(lightingShader);
+        //Sillla 3
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.f, 0.8f, 0.f + sil3));
+        model = glm::scale(model, glm::vec3(0.8f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        silla3.Draw(lightingShader);
 
 
-        ////Octopus
-        //model = glm::mat4(1);
-        //model = glm::scale(model, glm::vec3(.8f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //Octopus.Draw(lightingShader);
-        ////Mueble
-        //model = glm::mat4(1);
-        //model = glm::scale(model, glm::vec3(.8f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //mueble.Draw(lightingShader);
+        //Octopus
+        model = glm::mat4(1);
+        model = glm::scale(model, glm::vec3(.8f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        Octopus.Draw(lightingShader);
+        //Mueble
+        model = glm::mat4(1);
+        model = glm::scale(model, glm::vec3(.8f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        mueble.Draw(lightingShader);
 
-        ////Baul
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-2.f, 4.3f, -2.2f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //baul.Draw(lightingShader);
-        ////Tapa
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-2.f, 4.3f, -2.2f));
-        //model = glm::rotate(model, glm::radians(-rotbaul), glm::vec3(1.f, 0.f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //tapa.Draw(lightingShader);
-        ////Bed
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-.8f, 0.24f, -4.2f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //cama.Draw(lightingShader);
+        //Baul
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.f, 4.3f, -2.2f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        baul.Draw(lightingShader);
+        //Tapa
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.f, 4.3f, -2.2f));
+        model = glm::rotate(model, glm::radians(-rotbaul), glm::vec3(1.f, 0.f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        tapa.Draw(lightingShader);
+        //Bed
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-.8f, 0.24f, -4.2f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        cama.Draw(lightingShader);
 
-        ////Mesita
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(.0f, 0.0f, 0.0f));
-        //model = glm::scale(model, glm::vec3(0.9f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //mesita.Draw(lightingShader);
-        ////* Caja teléfono
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-2.8f, 4.9f, 5.4f));
-        //model = glm::scale(model, glm::vec3(.55f, 0.55f, 0.55f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //caja_tel.Draw(lightingShader);
-        ////* Teléfono
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-2.8f, 4.9f, 5.4f));
-        //model = glm::scale(model, glm::vec3(.55f, 0.55f, 0.55f));
-        //model = glm::rotate(model, glm::radians(movetel), glm::vec3(1.f, 0.f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //telefono.Draw(lightingShader);
-        ////* nariz teléfono
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-2.8f, 4.9f, 5.4f));
-        //model = glm::scale(model, glm::vec3(.55f, 0.55f, 0.55f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //nariz_tel.Draw(lightingShader);
-        ////Bear
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(-0.5f, -0.1f, -.4f));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //osito.Draw(lightingShader);
-        ////**Tocador
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //tocador.Draw(lightingShader);
-        ////cajon1
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f - movetoc1));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //toc1.Draw(lightingShader);
-        ////cajon2
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f - movetoc2));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //toc2.Draw(lightingShader);
-        ////cajon3**
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f - movetoc3));
-        //model = glm::scale(model, glm::vec3(0.8f));
-        //model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //toc3.Draw(lightingShader);
-        ////Cochera
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.f, cpart1, 0.f));
-        //model = glm::rotate(model, glm::radians(-crot), glm::vec3(1.f, .0f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //cochera1.Draw(lightingShader);
-        ////Cochera
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.f, cpart2, 0.f));
-        //model = glm::rotate(model, glm::radians(-crot), glm::vec3(1.f, .0f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //cochera2.Draw(lightingShader);
-        ////Cochera
-        //model = glm::mat4(1);
-        //model = glm::translate(model, glm::vec3(0.f, cpart3, 0.f));
-        //model = glm::rotate(model, glm::radians(-crot), glm::vec3(1.f, .0f, 0.f));
-        //glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-        //glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
-        //glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
-        //cochera3.Draw(lightingShader);
+        //Mesita
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(.0f, 0.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(0.9f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        mesita.Draw(lightingShader);
+        //* Caja teléfono
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.8f, 4.9f, 5.4f));
+        model = glm::scale(model, glm::vec3(.55f, 0.55f, 0.55f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        caja_tel.Draw(lightingShader);
+        //* Teléfono
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.8f, 4.9f, 5.4f));
+        model = glm::scale(model, glm::vec3(.55f, 0.55f, 0.55f));
+        model = glm::rotate(model, glm::radians(movetel), glm::vec3(1.f, 0.f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        telefono.Draw(lightingShader);
+        //* nariz teléfono
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-2.8f, 4.9f, 5.4f));
+        model = glm::scale(model, glm::vec3(.55f, 0.55f, 0.55f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        nariz_tel.Draw(lightingShader);
+        //Bear
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-0.5f, -0.1f, -.4f));
+        model = glm::scale(model, glm::vec3(0.8f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        osito.Draw(lightingShader);
+        //**Tocador
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f));
+        model = glm::scale(model, glm::vec3(0.8f));
+        model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        tocador.Draw(lightingShader);
+        //cajon1
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f - movetoc1));
+        model = glm::scale(model, glm::vec3(0.8f));
+        model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        toc1.Draw(lightingShader);
+        //cajon2
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f - movetoc2));
+        model = glm::scale(model, glm::vec3(0.8f));
+        model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        toc2.Draw(lightingShader);
+        //cajon3**
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(5.f, 3.4f, 4.8f - movetoc3));
+        model = glm::scale(model, glm::vec3(0.8f));
+        model = glm::rotate(model, glm::radians(-rottoc), glm::vec3(0.f, 1.f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        toc3.Draw(lightingShader);
+        //Cochera
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.f, cpart1, 0.f));
+        model = glm::rotate(model, glm::radians(-crot), glm::vec3(1.f, .0f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        cochera1.Draw(lightingShader);
+        //Cochera
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.f, cpart2, 0.f));
+        model = glm::rotate(model, glm::radians(-crot), glm::vec3(1.f, .0f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        cochera2.Draw(lightingShader);
+        //Cochera
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(0.f, cpart3, 0.f));
+        model = glm::rotate(model, glm::radians(-crot), glm::vec3(1.f, .0f, 0.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        cochera3.Draw(lightingShader);
         //Pizarron
         model = glm::mat4(1);
         //model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
@@ -525,6 +528,24 @@ int main()
         glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
         glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
         lab_mesita.Draw(lightingShader);
+
+        // Lab soporte
+        model = glm::mat4(1);
+        //model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), 1.0, 1.0, 1.0, 0.75);
+        lab_soporte.Draw(lightingShader);
+       
+        
+        model = glm::mat4(1);
+        //model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 1);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"),1.0, 1.0, 1.0 , 0.75);
+        lab_mueble.Draw(lightingShader);
+        
+
         //Sillon lab
         model = glm::mat4(1);
         //model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
@@ -544,13 +565,20 @@ int main()
 
         glEnable(GL_BLEND);//Activa la funcionalidad para trabajar el canal alfa
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+        //Cristal
+        model = glm::mat4(1);
+        //model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
+        glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+        glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), .709 , .992, .964, 0.56);
+        lab_cristal.Draw(lightingShader);
 
         //Ventana 1
         model = glm::mat4(1);
         //  model = glm::translate(model, glm::vec3(10.f, 0.f, 10.f));
          // model = glm::rotate(model, glm::radians(rot), glm::vec3(1.f, .0f, 0.f));
         glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), .349, .952, .937, 0.4);
+        glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlfa"), .349, .952, .937, 0.35);
         glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
         vent1.Draw(lightingShader);
         //
